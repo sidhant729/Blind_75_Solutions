@@ -1,0 +1,22 @@
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) 
+    {
+        // create a unordered_map 
+        unordered_map<int,int>mp;
+
+        // Iterate over the array
+        // If ele is not present in map then insert it;
+        // else return the true
+
+        for(int i = 0; i < nums.size(); i++)
+        {
+            if(mp.find(nums[i]) != mp.end())
+            {
+                return true;
+            }
+            mp[nums[i]]++;
+        }
+        return false;
+    }
+};
