@@ -29,5 +29,5 @@ public:
 };
 
 
-// T.C. - O(n) (better approach take o(3n) time complexity)
-// S.C. - O(n) (better approach takes O(3n) space complexity)
+// T.C. - O(n) (Overall it takes o(2n) T.C. while the better approach takes o(3n) time complexity)
+// S.C. - O(n) (overall it takes o(1) space complexity while the better approach takes O(3n) space complexity)
