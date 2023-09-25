@@ -8,12 +8,12 @@ public:
         int count = 0;
         while(n > 0)
         {
-            if(n & 1 != 0) count++;
-            n = n >> 1;
+            n = n & (n-1);
+            count++;
         }   
         return count;
     }
 };
 
-// T.C. -> O(32) -> O(1)
-// S.C. -> O(1)
+// T.C. - O(1)
+// S.C. - O(1)
